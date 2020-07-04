@@ -1,0 +1,132 @@
+body{
+    font-family: 'Open Sans', sans-serif;
+    font-size:15px;
+    margin:0;
+    padding:0;
+}
+
+div,p,input,button,form,span,a,ul,li{
+    box-sizing:border-box;
+}
+
+h1, h2, h3, h4, h5, h6{
+    margin:0;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 900;
+}
+
+p{
+    line-height: 1.8em;
+    margin:0;
+}
+
+.container{
+    width: 1170px;
+    margin:0 auto;
+}
+
+.header{
+    color:#fff;
+    padding-top: 64px;
+    padding-bottom: 140px;
+    background-image: linear-gradient(to right bottom, #4ebefe, #00d4fd, #00e4d2, #00ed85, #a8eb12);
+}
+
+.wrapper{
+    display:flex;
+    justify-content: space-between;
+}
+
+.offer{
+    width: 700px;
+    padding-top: 155px;
+}
+
+.title{
+    font-size: 30px;
+    margin-bottom: 37px;
+}
+
+.intro{
+    width: 400px;
+    margin-bottom: 35px;
+}
+
+.title span{
+    font-size: 59px;
+}
+
+.btn{
+    background:#ffd429;
+    width: 223px;
+    padding:25px 0;
+    text-decoration: none;
+    color:#222;
+    display:block;
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+    transition: all 0.5s ease;
+}
+
+.btn:hover{
+    background:#e5ba0f;
+}
+
+.desktop{
+    margin-top:67px;
+}
+
+h2{
+    margin-bottom: 73px;
+    text-align: center;
+    padding-top:  110px;
+}
+
+.dreams{
+    justify-content: space-between;
+    display: flex;
+    margin-bottom: 120px;
+}
+
+.dream{
+    width: 320px;
+    text-align: center;
+}
+
+.dream h3{
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+.mail{
+    background: #ecf3f8;
+    padding-bottom: 110px;
+}
+
+.input{
+    width: 340px;
+    border: 1px solid #bbbbbb;
+    padding-left: 25px;
+    height: 50px;
+    font-size: 15px;
+    font-family: 'Open Sans', sans-serif;
+    display: block;
+    margin: 15px 415px;
+}
+
+.btn-form{
+    border: none;
+    cursor: pointer;
+    width: 340px;
+    margin: 15px 415px;
+}
+
+footer{
+    background: #164d7a;
+    padding: 65px 0;
+    color:#fff;   
+}
+
+.credits{
+    text-align: center;
+}
