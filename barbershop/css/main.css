@@ -1,0 +1,712 @@
+body{
+    /*Блочная модель(размеры и отступы)*/
+    margin: 0;
+    padding: 0;
+    /*Оформление текста*/
+    font-family:'PT Sans Narrow',Arial, sans-serif;
+    font-size: 14px;
+    line-height: 24px;
+    color:#ffffff;
+    text-transform: uppercase;
+    /*Декоративные элементы*/
+    background-color: black;
+    background-image: url(/img/Layer.png);
+    background-position: top center;
+    background-repeat: no-repeat;
+}
+
+a{
+    text-decoration: none;
+}
+
+img{
+    max-width: 100%;
+    height: auto;
+}
+
+.visually-hidden:not(:focus):not(:active),
+input[type="checkbox"].visually-hidden,
+input[type="radio"].visually-hidden{
+    position: absolute;
+
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border:0;
+    padding: 0;
+
+    white-space: nowrap;
+
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+
+.button{
+    display: inline-block;
+    padding: 3px 35px;
+    margin-right: 16px;
+    
+    font: inherit;
+
+    text-align: center;
+    color:#fff;
+    vertical-align: middle;
+    text-transform: uppercase;
+
+    background-color: #000000;
+    border:none;
+}
+
+.button:hover,
+.button:focus,
+.button:active{
+    background: brown;
+}
+
+.button.disabled,
+.button:disabled{
+    cursor: default;
+    opacity: 0.5;
+    background-color: #000000;
+}
+
+
+.main-navigation{
+    font-size: 16px;
+    line-height: 20px;
+}
+
+.site-navigation,
+.user-navigation{
+    list-style: none;
+}
+
+.site-navigation{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.site-navigation a,
+.user-navigation a{
+    color: #fff;
+    display: block;
+    padding: 25px 20px;
+}
+
+.site-navigation a:hover,
+.site-navigation a:focus,
+.user-navigation a:hover,
+.user-navigation a:focus{
+    background-color: black;
+}
+
+.features-list{
+    list-style: none;
+}
+
+.features-item{
+    text-align: center;
+}
+
+.features-item h3{
+    font-size: 30px;
+    line-height: 42px;
+
+    margin: 0;
+    margin-bottom: 60px;
+
+    position: relative;
+}
+
+.features-item h3::after{
+    content: '';
+    
+    position: absolute;
+    bottom: -30px;
+    left: 50%;
+    margin-left: -10px;
+
+    width: 20px;
+    height: 20px;
+    background-color: #fff;
+
+    transform: rotate(45deg);
+}
+
+.features-item p{
+    margin: 0 10px;
+}
+
+.index-columns{
+    color: black;
+    background-color: #f9f6f3;
+    background-image:url(/img/Layer\ 17\ copy.png),
+    url(/img/Layer\ 10\ copy.jpg);
+    background-position:center, 0 0;
+    background-repeat:no-repeat, repeat;
+}
+
+.index-columns{
+    font-size: 14px;
+    line-height: 42px;
+}
+
+.index-columns h2{
+    font-weight: 30px;
+    line-height: 42px;
+
+    margin: 0;
+    margin-bottom: 25px;
+}
+
+.news-list{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    margin-bottom: 25px;
+    line-height: 25px;
+}
+
+.news-item{
+    margin-bottom: 25px;
+}
+
+.news-item p{
+    margin: 0;
+    line-height: 25px;
+    
+}
+
+.news-item time{
+    text-transform: none;
+}
+
+.gallery-content{
+    background-color: #cccccc;
+    border: 7px solid #fff;
+
+    height: 164px;
+    margin: 0;
+}
+
+.gallery-content img{
+    width: 286px;
+    height: 164px;
+}
+
+.gallery-content a{
+    text-align: center;
+}
+
+.gallery-container{
+    position: relative;
+    height: 268px;
+}
+
+.gallery-button{
+    box-sizing: border-box;
+    position: absolute;
+    bottom: 0;
+
+    width: 140px;
+    margin: 0;
+}
+
+.gallery-button-back{
+    left: 0;
+}
+
+.gallery-button-next{
+    right: 0;
+}
+
+.contacts{
+    width: 380px;
+}
+
+.contacts p{
+    margin: 0;
+    margin-bottom: 25px;
+    line-height: 25px;
+}
+
+.appointment{
+    width: 320px;
+    line-height: 25px;
+    height: 380px;
+}
+
+.appointment-info{
+    margin: 0;
+}
+
+.appointment-form{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.appointment-item input{
+    font: inherit;
+    
+    width: 140px;
+    margin: 0;
+    margin-bottom: 10px;
+
+    background-color: transparent;
+    border:2px solid #000000;
+
+    box-sizing: border-box;
+    width: 140px;
+    padding-top: 8px;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-bottom: 7px;
+}
+
+/*Доступность*/
+.appointment-item input:focus{
+    border-color: blue;
+}
+
+.appointment-item label{
+    display: block;
+    margin-left: 15px;
+    margin-bottom: 9px;
+}
+
+.appointment .button{
+    display: block;
+    width: 100%;
+    padding: 10px;
+    margin-right: 0;
+}
+
+footer{
+    color:#fff;
+    background-color: #202020;
+}
+
+.footer-contacts a:hover,
+.footer-contacts a:focus{
+    text-decoration: none;
+}
+
+.footer-social{
+    width: 200px;
+    text-align: center;
+}
+
+.footer-social ul{
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 0;
+    margin: 0 auto;
+}
+
+.social-button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 43px;
+    height: 43px;
+    margin-bottom: 10px;
+}
+
+.social-button:hover,
+.social-button:focus{
+    background-color: #fff;
+}
+
+.social-button:hover path,
+.social-button:focus path{
+    fill: #000000;
+}
+
+.footer-copyright{
+    text-align: center;
+}
+
+.footer-copyright b{
+    display: block;
+    margin-bottom: 15px;
+}
+
+.footer-copyright .button{
+    display: block;
+    margin-right: 0;
+}
+
+.footer-copyright .button:hover,
+.footer-copyright .button:focus{
+    color: #000000;
+
+    background-color: #fff;
+}
+
+.modal{
+    color: #000;
+    background-color: #f8f3f0;
+}
+
+.modal h2{
+    font-size: 30px;
+    line-height: 42px;
+}
+
+.login-form input[type="email"],
+.login-form input[type="password"]{
+    font: inherit;
+    color: #000000;
+    text-transform: uppercase;
+
+    background-color: #f9f6f3;
+    border:2 px solid #000000;
+}
+
+.login-form input:focus{
+    border-color: #663d15;
+}
+
+.login-checkbox:hover,
+.login-checkbox:focus{
+    color: #663d15;
+}
+
+.restore{
+    color:inherit;
+    text-decoration: underline;
+}
+
+.restore:hover,
+.restore:focus{
+    text-decoration: none;
+}
+
+
+/*Сеточные стили*/
+
+html,
+body{
+    min-width: 1122px;
+    min-height: 1750px;
+}
+
+.main-header{
+    margin-bottom: 75px;
+}
+
+.container{
+    width: 940px;
+    margin: 0 auto;
+    padding: 0 10px;
+}
+
+.main-navigation-wrapper .container{
+    display: flex;
+    justify-content: space-between;
+}
+
+.main-navigation{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.main-header-logo{
+    order: 2;
+    width: 368px;
+    height: 153px;
+}
+
+.site-navigation{
+    width: 620px;
+    padding: 0;
+    margin: 0;
+}
+
+.user-navigation{
+    width: 140px;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+.user-navigation .login-link{
+    padding-left: 50px;
+    position: relative;
+}
+
+.login-link::before{
+    content:'';
+
+    width: 16px;
+    height: 18px;
+    position: absolute;
+    top:27px;
+    left:24px;
+
+    background-image: url(/img/login.png);
+    background-repeat: no-repeat;
+
+    opacity: 0.3;
+}
+
+.login-link:hover::before,
+.login-link:focus::before,
+.login-link:active::before{
+    opacity: 1;
+}
+
+.main-navigation-wrapper{
+    margin-bottom: 60px;
+    width: 100%;
+}
+
+.features-list{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+.features-item{
+    width: 300px;
+    margin-bottom: 80px;
+}
+
+.index-columns{
+    padding: 50px 80px;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 35px;
+}
+
+
+.news{
+    width: 380px;
+}
+
+.gallery{
+    width: 300px;
+}
+
+.main-footer{
+    margin-top: 65px;
+    padding: 60px 0;
+}
+
+.main-footer .container{
+    display: flex;
+}
+
+.footer-contacts{
+    margin: 0;
+    width: 320px;
+    margin-right: 80px;
+}
+
+.footer-social{
+    width: 145px;
+}
+
+.footer-copyright{
+    width: 150px;
+    margin-left: auto;
+}
+
+/* Всплывающая форма */
+
+.modal{
+    color: #000000;
+
+    position: fixed;
+
+    background-color: #f8f3f0;
+    background-image: url(/img/Layer\ 10\ copy.jpg);
+    background-position: 0 0;
+    background-repeat: repeat;
+    box-shadow: 0 30px 50px rgba(0, 0, 0, 0.7);
+}
+
+.modal-login{
+    width: 300px;
+    padding: 50px 80px;
+
+    display: none;
+
+    top:120px;
+    left: 50%;
+    margin-left: -230px;
+}
+
+.modal-close{
+    position: absolute;
+    top: 0;
+    right: -34px;
+
+    width: 22px;
+    height: 22px;
+
+    background-color: transparent;
+    border: 0;
+
+    cursor: pointer;
+}
+
+.modal-close::before,
+.modal-close::after{
+    content: '';
+
+    position: absolute;
+
+    top: 10px;
+    left: 2px;
+
+    width: 19px;
+    height: 3px;
+
+    background-color: #d0d0d0;
+}
+
+.modal-close::before{
+    transform: rotate(45deg);
+}
+
+.modal-close::after{
+    transform: rotate(-45deg);
+}
+
+.modal-login h2{
+    margin: 0;
+    margin-bottom: 20px;
+
+    font-size: 20px;
+    line-height: 42px;
+}
+
+.modal-description{
+    margin: 0;
+    margin-bottom: 10px;
+}
+
+.login-form p{
+    margin: 0;
+    margin-bottom: 10px;
+}
+
+.login-icon-user,
+.login-icon-password{
+    box-sizing: border-box;
+    width: 100%;
+    padding: 10px 15px;
+    padding-right: 40px;
+
+    font: inherit;
+    columns: #000000;
+    text-transform: inherit;
+    background-color: #f9f6f3;
+    border: 2px solid #000000;
+}
+
+.login-form input:focus{
+    border-color:#663d15;
+}
+
+.login-icon-user{
+    background-image: url(/img/user.svg);
+    background-position: 270px center;
+    background-repeat: no-repeat;
+}
+
+.login-icon-password{
+    background-image: url(/img/lock.svg);
+    background-position: 270px center;
+    background-repeat: no-repeat;
+}
+
+.login-password-info{
+    display: flex;
+    flex-wrap: wrap;   /*дабы текст в будущем не ломался*/
+    justify-content: space-between;
+    margin: 15px 0;
+}
+
+.login-checkbox{
+    position: relative;
+
+    padding-left: 30px;
+
+    cursor: pointer;
+}
+
+.login-checkbox input[type="checkbox"]+ .checkbox-indicator{
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    width: 17px;
+    height: 17px;
+
+    border: 2px solid #000000;
+}
+/* Добавляем состояние фокуса*/
+.login-checkbox input[type="checkbox"]:focus+ .checkbox-indicator{
+    border-color: #663d15;
+    outline: thin dotted;
+    outline: 5px auto -webkit-focus-ring-color;
+}
+/* Создаем иконку выбранного чекбокса*/
+.login-checkbox input[type="checkbox"]:checked + .checkbox-indicator::before,
+.login-checkbox input[type="checkbox"]:checked + .checkbox-indicator::after{
+    content: '';
+
+    position: absolute;
+    top: 8px;
+    left: 1px;
+
+    width: 15px;
+    height: 2px;
+
+    background-color: #000000;
+}
+
+.login-checkbox input[type="checkbox"]:checked + .checkbox-indicator::before{
+    transform: rotate(45deg);
+}
+
+.login-checkbox input[type="checkbox"]:checked + .checkbox-indicator::after{
+    transform: rotate(-45deg);
+}
+
+.login-form .button{
+    width: 100%;
+    margin-right: 0;
+    padding: 10px 0;
+}
+
+/*Добавляем карту*/
+.modal-map{
+    top: 50%;
+    left: 50%;
+
+    display: none;
+    width: 766px;
+    height: 561px;
+    margin-top: -280px;
+    margin-left: -390px;
+
+    border: 7px solid white;
+}
+
+.modal-map p{
+    margin: 0;
+}
+
+
+
+
+
