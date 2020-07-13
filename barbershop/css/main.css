@@ -10,7 +10,7 @@ body{
     text-transform: uppercase;
     /*Декоративные элементы*/
     background-color: black;
-    background-image: url(/img/Layer.png);
+    background-image: url(/barbershop/img/Layer.png);
     background-position: top center;
     background-repeat: no-repeat;
 }
@@ -141,8 +141,8 @@ input[type="radio"].visually-hidden{
 .index-columns{
     color: black;
     background-color: #f9f6f3;
-    background-image:url(/img/Layer\ 17\ copy.png),
-    url(/img/Layer\ 10\ copy.jpg);
+    background-image:url(/barbershop/img/Layer\ 17\ copy.png),
+    url(/barbershop/img/Layer\ 10\ copy.jpg);
     background-position:center, 0 0;
     background-repeat:no-repeat, repeat;
 }
@@ -449,7 +449,7 @@ body{
     top:27px;
     left:24px;
 
-    background-image: url(/img/login.png);
+    background-image: url(/barbershop/img/login.png);
     background-repeat: no-repeat;
 
     opacity: 0.3;
@@ -526,7 +526,7 @@ body{
     position: fixed;
 
     background-color: #f8f3f0;
-    background-image: url(/img/Layer\ 10\ copy.jpg);
+    background-image: url(/barbershop/img/Layer\ 10\ copy.jpg);
     background-position: 0 0;
     background-repeat: repeat;
     box-shadow: 0 30px 50px rgba(0, 0, 0, 0.7);
@@ -617,13 +617,13 @@ body{
 }
 
 .login-icon-user{
-    background-image: url(/img/user.svg);
+    background-image: url(/barbershop/img/user.svg);
     background-position: 270px center;
     background-repeat: no-repeat;
 }
 
 .login-icon-password{
-    background-image: url(/img/lock.svg);
+    background-image: url(/barbershop/img/lock.svg);
     background-position: 270px center;
     background-repeat: no-repeat;
 }
