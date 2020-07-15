@@ -5,6 +5,7 @@ body{
     /*Оформление текста*/
     font-family:'PT Sans Narrow',Arial, sans-serif;
     font-size: 14px;
+    font-weight: 700;
     line-height: 24px;
     color:#ffffff;
     text-transform: uppercase;
@@ -368,7 +369,8 @@ footer{
 }
 
 .login-form input:focus{
-    border-color: #663d15;
+    outline: none;
+    border: 2px solid green;
 }
 
 .login-checkbox:hover,
@@ -392,7 +394,7 @@ footer{
 html,
 body{
     min-width: 1122px;
-    min-height: 1750px;
+    
 }
 
 .main-header{
@@ -613,7 +615,8 @@ body{
 }
 
 .login-form input:focus{
-    border-color:#663d15;
+    outline: none;
+    border: 2 px solid green;
 }
 
 .login-icon-user{
@@ -705,6 +708,217 @@ body{
 .modal-map p{
     margin: 0;
 }
+
+/* Страничка Price-list*/
+
+.inner-page{
+    background-color: #f9f6f3;
+    background-image: url(/barbershop/img/Layer\ 10\ copy.jpg);
+}
+
+/*Меню*/
+.inner-page .main-navigation-wrapper{
+    margin-bottom: 0;
+}
+
+.inner-page .main-header{
+    margin-bottom: 0;
+    background-color: #000;
+}
+
+.site-navigation{
+    width: 800px;
+    height: 24px;
+}
+
+.site-navigation .main-header-logo{
+    order: 1;
+    width: 111px;
+    height: 24px;
+}
+
+.inner-page-container{
+    color: #000;
+
+    padding-top: 56px;
+}
+
+.inner-page-container .page-title{
+    margin: 0;
+    padding: 0;
+}
+
+.breadcrumbs{
+    margin: 0;
+    padding: 0;
+
+    padding-top: 30px;
+    padding-bottom: 58px;
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    list-style: none;
+    width: 154px;
+    box-sizing: border-box;
+
+    position: relative;
+}
+.breadcrumbs a{
+    color: #000;
+}
+
+.breadcrumbs a:hover{
+    text-decoration: underline;
+}
+
+.breadcrumbs a:after{
+    content: '';
+    position: absolute;
+
+    left: 41%;
+    bottom: 61%;
+
+    width: 7px;
+    height: 7px;
+
+    background-color: #000;
+    transform: rotate(45deg);
+}
+
+.breadcrumbs .breadcrumbs-current{
+    color: #aba9a7;
+}
+
+.inner-content h2{
+    padding: 0;
+    margin: 0;
+}
+
+.inner-content h3{
+    margin-top: 60px;
+    margin-bottom: 30px;
+    
+    font-size: 24px;
+    line-height: 30px;
+}
+
+.inner-content p{
+    margin: 14px 0;
+}
+/* Склеиваем рамки таблицы в одну*/
+.inner-content table{
+    border-collapse: collapse;
+}
+
+.inner-content td{
+    padding: 10px 15px;
+
+    border: 2px solid #000000;
+}
+
+.inner-content .big-heading{
+    display: flex;
+    align-items: center;
+
+    margin-top: 55px;
+    margin-bottom: 65px;
+
+    font-size: 48px;
+    line-height: 48px;
+    text-align: center;
+}
+
+.big-heading::before,
+.big-heading::after{
+    content: '';
+
+    flex-grow: 1;  /* Не уменьшаться*/
+    flex-shrink: 0;/*Но расти*/
+
+    width: 50px;
+    height: 2px;
+    background-color: #000;
+}
+
+.big-heading::before{
+    margin-right: 25px;
+}
+
+.big-heading::after{
+    margin-left: 25px;
+}
+
+.custom-list-1{
+    margin: 14px 0;
+    padding: 0;
+
+    list-style: none;
+}
+
+.custom-list-1 li{
+    position: relative;
+
+    margin-bottom: 15px;
+    padding-left: 20px;
+}
+
+.custom-list-1 li::before{
+    content: '';
+    position: absolute;
+
+    top: 8px;
+    left: 0;
+
+    width: 7px;
+    height: 7px;
+
+    background-color: #000;
+    transform: rotate(45deg);
+}
+
+.custom-table-1{
+    width: 100%;
+}
+
+.custom-table-1 td{
+    width: 50%;
+}
+
+.custom-table-1 td:last-child{
+    text-align: center;
+}
+
+.inner-columns{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+    margin: 60px 0;
+}
+
+.inner-column-left,
+.inner-column-right{
+    width: 460px;
+}
+
+.inner-column-left *:first-child,
+.inner-column-right *:first-child{
+    margin-top: 0;
+}
+
+.inner-column-left *:last-child,
+.inner-column-right *:last-child{
+    margin-top: 0;
+}
+
+.inner-columns >h3:first-child{
+    margin-top: 0;
+    width: 460px;
+   
+    margin-right: calc(100% - 460px);
+}
+
 
 
 
