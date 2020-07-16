@@ -410,6 +410,8 @@ body{
 .main-navigation-wrapper .container{
     display: flex;
     justify-content: space-between;
+    
+    min-height: 70px; /* На случай переполнения контентом*/
 }
 
 .main-navigation{
@@ -921,6 +923,6 @@ body{
 
 
 
-
+/* 1 час 14 минут */
 
 
