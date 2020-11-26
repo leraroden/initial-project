@@ -45,7 +45,7 @@ body {
 
 .input-search {
   width: 300px;
-  background-image: url(/img/search.svg);
+  background-image: url(../img/search.svg);
   margin-left: auto;
 }
 
@@ -82,7 +82,7 @@ body {
 }
 
 .promo {
-  background: #fff1b8 url(/img/promo-image.png) no-repeat top 100px right 0px /
+  background: #fff1b8 url(../img/promo-image.png) no-repeat top 100px right 0px /
     600px;
   border-radius: 10px;
   box-shadow: 0px 7px 12px rgba(158, 158, 163, 0.1);
